@@ -7,9 +7,40 @@
 
 const { ask } = require('../helpers/input');
 
+function obtenFecha(year){
+
+    const fechaactual= new Date;
+    const añoactual = fechaactual.getFullYear();
+    const años = year.getFullYear();
+    const Año=añoactual-años;
+    const dias = (añoactual-años);
+    const meses = (añoactual-años);
+
+
+
+    
+    return Año;
+    return dias;
+    return meses;
+    
+
+   
+}
+
 async function main() {
 
+    const year = new Date (await ask("Ingresa tu fecha"));
+    const Año= obtenFecha(year);
+    const dias= obtenFecha(year);
+    const meses = obtenFecha(year);
 
+   
+
+    console.log("Años cumplidos: ",Año)
+    console.log("Dias cumplidos: ",dias*364);
+    console.log("Meses cumplidos ",meses*12)
+
+ 
 }
 
 main();
