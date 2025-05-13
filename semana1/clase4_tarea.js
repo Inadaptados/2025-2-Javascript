@@ -19,9 +19,7 @@ function obtenFecha(year){
 
 
     
-    return Año;
-    return dias;
-    return meses;
+    return Año,dias,meses;
     
 
    
